@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "12/24/2018 3:35:56 PM"
+    "x-generation-date": "08/02/2019 11:00:04 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -44,7 +44,7 @@
     }
   ],
   "paths": {
-    "/posts": {
+    "/profils": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -56,7 +56,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Post"
+                    "$ref": "#/components/schemas/Profil"
                   }
                 }
               }
@@ -95,7 +95,7 @@
         },
         "summary": "",
         "tags": [
-          "Post"
+          "Profil"
         ],
         "parameters": [
           {
@@ -219,7 +219,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Post"
+                  "$ref": "#/components/schemas/Profil"
                 }
               }
             }
@@ -257,7 +257,7 @@
         },
         "summary": "",
         "tags": [
-          "Post"
+          "Profil"
         ],
         "requestBody": {
           "description": "",
@@ -265,14 +265,14 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewPost"
+                "$ref": "#/components/schemas/NewProfil"
               }
             }
           }
         }
       }
     },
-    "/posts/count": {
+    "/profils/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -324,12 +324,12 @@
         },
         "summary": "",
         "tags": [
-          "Post"
+          "Profil"
         ],
         "parameters": []
       }
     },
-    "/posts/{_id}": {
+    "/profils/{_id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -339,7 +339,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Post"
+                  "$ref": "#/components/schemas/Profil"
                 }
               }
             }
@@ -377,7 +377,7 @@
         },
         "summary": "",
         "tags": [
-          "Post"
+          "Profil"
         ],
         "parameters": [
           {
@@ -401,7 +401,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Post"
+                  "$ref": "#/components/schemas/Profil"
                 }
               }
             }
@@ -439,7 +439,7 @@
         },
         "summary": "",
         "tags": [
-          "Post"
+          "Profil"
         ],
         "requestBody": {
           "description": "",
@@ -447,7 +447,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewPost"
+                "$ref": "#/components/schemas/NewProfil"
               }
             }
           }
@@ -513,7 +513,7 @@
         },
         "summary": "",
         "tags": [
-          "Post"
+          "Profil"
         ],
         "parameters": [
           {
@@ -529,7 +529,7 @@
         ]
       }
     },
-    "/tags": {
+    "/recherches": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -541,7 +541,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Tag"
+                    "$ref": "#/components/schemas/Recherche"
                   }
                 }
               }
@@ -580,7 +580,7 @@
         },
         "summary": "",
         "tags": [
-          "Tag"
+          "Recherche"
         ],
         "parameters": [
           {
@@ -704,7 +704,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Tag"
+                  "$ref": "#/components/schemas/Recherche"
                 }
               }
             }
@@ -742,7 +742,7 @@
         },
         "summary": "",
         "tags": [
-          "Tag"
+          "Recherche"
         ],
         "requestBody": {
           "description": "",
@@ -750,14 +750,14 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewTag"
+                "$ref": "#/components/schemas/NewRecherche"
               }
             }
           }
         }
       }
     },
-    "/tags/count": {
+    "/recherches/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -809,12 +809,12 @@
         },
         "summary": "",
         "tags": [
-          "Tag"
+          "Recherche"
         ],
         "parameters": []
       }
     },
-    "/tags/{_id}": {
+    "/recherches/{_id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -824,7 +824,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Tag"
+                  "$ref": "#/components/schemas/Recherche"
                 }
               }
             }
@@ -862,7 +862,7 @@
         },
         "summary": "",
         "tags": [
-          "Tag"
+          "Recherche"
         ],
         "parameters": [
           {
@@ -886,7 +886,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Tag"
+                  "$ref": "#/components/schemas/Recherche"
                 }
               }
             }
@@ -924,7 +924,7 @@
         },
         "summary": "",
         "tags": [
-          "Tag"
+          "Recherche"
         ],
         "requestBody": {
           "description": "",
@@ -932,7 +932,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewTag"
+                "$ref": "#/components/schemas/NewRecherche"
               }
             }
           }
@@ -998,7 +998,497 @@
         },
         "summary": "",
         "tags": [
-          "Tag"
+          "Recherche"
+        ],
+        "parameters": [
+          {
+            "name": "_id",
+            "in": "path",
+            "description": "",
+            "deprecated": false,
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/users": {
+      "get": {
+        "deprecated": false,
+        "description": "Retrieve all user documents",
+        "responses": {
+          "200": {
+            "description": "response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Users-PermissionsUser"
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Users-Permissions - User"
+        ],
+        "parameters": [
+          {
+            "name": "_limit",
+            "in": "query",
+            "required": false,
+            "description": "Maximum number of results possible",
+            "schema": {
+              "type": "integer"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_sort",
+            "in": "query",
+            "required": false,
+            "description": "Sort according to a specific field.",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_start",
+            "in": "query",
+            "required": false,
+            "description": "Skip a specific number of entries (especially useful for pagination)",
+            "schema": {
+              "type": "integer"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "=",
+            "in": "query",
+            "required": false,
+            "description": "Get entries that matches exactly your input",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_ne",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are not equals to something",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_lt",
+            "in": "query",
+            "required": false,
+            "description": "Get record that are lower than a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_lte",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are lower than or equal to a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_gt",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are greater than a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_gte",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are greater than  or equal a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_contains",
+            "in": "query",
+            "required": false,
+            "description": "Get records that contains a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_containss",
+            "in": "query",
+            "required": false,
+            "description": "Get records that contains (case sensitive) a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          }
+        ]
+      },
+      "post": {
+        "deprecated": false,
+        "description": "Create a new users record",
+        "responses": {
+          "200": {
+            "description": "Retrieve users document(s)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Users"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Users"
+        ],
+        "requestBody": {
+          "description": "",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NewUsers"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/users/count": {
+      "get": {
+        "deprecated": false,
+        "description": "Retrieve the numver of users documents",
+        "responses": {
+          "200": {
+            "description": "Retrieve users document(s)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "count": {
+                      "type": "integer"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Users"
+        ],
+        "parameters": []
+      }
+    },
+    "/users/{_id}": {
+      "get": {
+        "deprecated": false,
+        "description": "Retrieve a single user depending on his id",
+        "responses": {
+          "200": {
+            "description": "response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Users-PermissionsUser"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Users-Permissions - User"
+        ],
+        "parameters": [
+          {
+            "name": "_id",
+            "in": "path",
+            "description": "",
+            "deprecated": false,
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "put": {
+        "deprecated": false,
+        "description": "Update an existing user",
+        "responses": {
+          "200": {
+            "description": "response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Users-PermissionsUser"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Users-Permissions - User"
+        ],
+        "requestBody": {
+          "description": "",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NewUsers-PermissionsUser"
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "_id",
+            "in": "path",
+            "description": "",
+            "deprecated": false,
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "delete": {
+        "deprecated": false,
+        "description": "Delete an existing user",
+        "responses": {
+          "200": {
+            "description": "response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int64",
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Users-Permissions - User"
         ],
         "parameters": [
           {
@@ -2604,173 +3094,6 @@
         "security": []
       }
     },
-    "/users": {
-      "get": {
-        "deprecated": false,
-        "description": "Retrieve all user documents",
-        "responses": {
-          "200": {
-            "description": "response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Users-PermissionsUser"
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Users-Permissions - User"
-        ],
-        "parameters": [
-          {
-            "name": "_limit",
-            "in": "query",
-            "required": false,
-            "description": "Maximum number of results possible",
-            "schema": {
-              "type": "integer"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_sort",
-            "in": "query",
-            "required": false,
-            "description": "Sort according to a specific field.",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_start",
-            "in": "query",
-            "required": false,
-            "description": "Skip a specific number of entries (especially useful for pagination)",
-            "schema": {
-              "type": "integer"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "=",
-            "in": "query",
-            "required": false,
-            "description": "Get entries that matches exactly your input",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_ne",
-            "in": "query",
-            "required": false,
-            "description": "Get records that are not equals to something",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_lt",
-            "in": "query",
-            "required": false,
-            "description": "Get record that are lower than a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_lte",
-            "in": "query",
-            "required": false,
-            "description": "Get records that are lower than or equal to a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_gt",
-            "in": "query",
-            "required": false,
-            "description": "Get records that are greater than a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_gte",
-            "in": "query",
-            "required": false,
-            "description": "Get records that are greater than  or equal a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_contains",
-            "in": "query",
-            "required": false,
-            "description": "Get records that contains a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_containss",
-            "in": "query",
-            "required": false,
-            "description": "Get records that contains (case sensitive) a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          }
-        ]
-      }
-    },
     "/users/me": {
       "get": {
         "deprecated": false,
@@ -2823,214 +3146,11 @@
         ],
         "parameters": []
       }
-    },
-    "/users/{_id}": {
-      "get": {
-        "deprecated": false,
-        "description": "Retrieve a single user depending on his id",
-        "responses": {
-          "200": {
-            "description": "response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Users-PermissionsUser"
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Users-Permissions - User"
-        ],
-        "parameters": [
-          {
-            "name": "_id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ]
-      },
-      "put": {
-        "deprecated": false,
-        "description": "Update an existing user",
-        "responses": {
-          "200": {
-            "description": "response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Users-PermissionsUser"
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Users-Permissions - User"
-        ],
-        "parameters": [
-          {
-            "name": "_id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "requestBody": {
-          "description": "",
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/NewUsers-PermissionsUser"
-              }
-            }
-          }
-        }
-      },
-      "delete": {
-        "deprecated": false,
-        "description": "Delete an existing user",
-        "responses": {
-          "200": {
-            "description": "response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Users-Permissions - User"
-        ],
-        "parameters": [
-          {
-            "name": "_id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ]
-      }
     }
   },
   "components": {
     "schemas": {
-      "Post": {
+      "Profil": {
         "required": [
           "id"
         ],
@@ -3038,15 +3158,31 @@
           "id": {
             "type": "string"
           },
-          "title": {
+          "nom": {
             "type": "string",
             "default": ""
           },
-          "content": {
+          "prenom": {
             "type": "string",
             "default": ""
           },
-          "cover": {
+          "description": {
+            "type": "string",
+            "default": ""
+          },
+          "age": {
+            "type": "integer",
+            "default": ""
+          },
+          "style": {
+            "type": "string",
+            "default": ""
+          },
+          "inspiration": {
+            "type": "string",
+            "default": ""
+          },
+          "photo_profil": {
             "required": [
               "id",
               "name",
@@ -3092,49 +3228,75 @@
               }
             }
           },
-          "tags": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "name": {
-                  "type": "string"
-                },
-                "posts": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                }
+          "users": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "email": {
+                "type": "string"
+              },
+              "mdp": {
+                "type": "string"
+              },
+              "profil": {
+                "type": "string"
               }
             }
+          },
+          "localisation": {
+            "type": "string",
+            "default": ""
+          },
+          "instrument": {
+            "type": "string",
+            "default": ""
           }
         }
       },
-      "NewPost": {
+      "NewProfil": {
         "properties": {
-          "title": {
+          "nom": {
             "type": "string",
             "default": ""
           },
-          "content": {
+          "prenom": {
             "type": "string",
             "default": ""
           },
-          "tags": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
+          "description": {
+            "type": "string",
+            "default": ""
+          },
+          "age": {
+            "type": "integer",
+            "default": ""
+          },
+          "style": {
+            "type": "string",
+            "default": ""
+          },
+          "inspiration": {
+            "type": "string",
+            "default": ""
+          },
+          "users": {
+            "type": "string"
+          },
+          "localisation": {
+            "type": "string",
+            "default": ""
+          },
+          "instrument": {
+            "type": "string",
+            "default": ""
           }
         }
       },
-      "Tag": {
+      "Recherche": {
         "required": [
           "id"
         ],
@@ -3142,51 +3304,122 @@
           "id": {
             "type": "string"
           },
-          "name": {
+          "instrument_recherche": {
             "type": "string",
             "default": ""
           },
-          "posts": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "title": {
-                  "type": "string"
-                },
-                "content": {
-                  "type": "string"
-                },
-                "cover": {
-                  "type": "string"
-                },
-                "tags": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                }
+          "style_recherche": {
+            "type": "string",
+            "default": ""
+          },
+          "age_recherche": {
+            "type": "string",
+            "default": ""
+          },
+          "experience_recherche": {
+            "type": "string",
+            "default": ""
+          },
+          "localisation_recherche": {
+            "type": "string",
+            "default": ""
+          }
+        }
+      },
+      "NewRecherche": {
+        "properties": {
+          "instrument_recherche": {
+            "type": "string",
+            "default": ""
+          },
+          "style_recherche": {
+            "type": "string",
+            "default": ""
+          },
+          "age_recherche": {
+            "type": "string",
+            "default": ""
+          },
+          "experience_recherche": {
+            "type": "string",
+            "default": ""
+          },
+          "localisation_recherche": {
+            "type": "string",
+            "default": ""
+          }
+        }
+      },
+      "Users": {
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string",
+            "default": ""
+          },
+          "mdp": {
+            "type": "string",
+            "default": ""
+          },
+          "profil": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "nom": {
+                "type": "string"
+              },
+              "prenom": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "age": {
+                "type": "integer"
+              },
+              "style": {
+                "type": "string"
+              },
+              "inspiration": {
+                "type": "string"
+              },
+              "photo_profil": {
+                "type": "string"
+              },
+              "users": {
+                "type": "string"
+              },
+              "localisation": {
+                "type": "string"
+              },
+              "instrument": {
+                "type": "string"
               }
             }
           }
         }
       },
-      "NewTag": {
+      "NewUsers": {
         "properties": {
-          "name": {
+          "email": {
             "type": "string",
             "default": ""
           },
-          "posts": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
+          "mdp": {
+            "type": "string",
+            "default": ""
+          },
+          "profil": {
+            "type": "string"
           }
         }
       },
@@ -3490,10 +3723,13 @@
   },
   "tags": [
     {
-      "name": "Post"
+      "name": "Profil"
     },
     {
-      "name": "Tag"
+      "name": "Recherche"
+    },
+    {
+      "name": "Users"
     },
     {
       "name": "Email"

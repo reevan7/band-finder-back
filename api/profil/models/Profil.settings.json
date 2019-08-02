@@ -1,0 +1,55 @@
+{
+  "connection": "default",
+  "collectionName": "profil",
+  "info": {
+    "name": "profil",
+    "description": "Page profil "
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "nom": {
+      "default": "",
+      "type": "string"
+    },
+    "prenom": {
+      "default": "",
+      "type": "string"
+    },
+    "description": {
+      "default": "",
+      "type": "string"
+    },
+    "age": {
+      "default": "",
+      "type": "integer"
+    },
+    "style": {
+      "default": "",
+      "type": "string"
+    },
+    "inspiration": {
+      "default": "",
+      "type": "string"
+    },
+    "photo_profil": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "users": {
+      "model": "users",
+      "via": "profil"
+    },
+    "localisation": {
+      "default": "",
+      "type": "string"
+    },
+    "instrument": {
+      "default": "",
+      "type": "string"
+    }
+  }
+}
