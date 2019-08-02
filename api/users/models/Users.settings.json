@@ -1,0 +1,25 @@
+{
+  "connection": "default",
+  "collectionName": "users",
+  "info": {
+    "name": "users",
+    "description": "table des utilisateurs"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "email": {
+      "default": "",
+      "type": "email"
+    },
+    "mdp": {
+      "default": "",
+      "type": "password"
+    },
+    "profil": {
+      "model": "profil",
+      "via": "users"
+    }
+  }
+}

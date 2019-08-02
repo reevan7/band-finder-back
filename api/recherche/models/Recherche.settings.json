@@ -1,0 +1,33 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "recherche",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "instrument_recherche": {
+      "default": "",
+      "type": "string"
+    },
+    "style_recherche": {
+      "default": "",
+      "type": "string"
+    },
+    "age_recherche": {
+      "default": "",
+      "type": "string"
+    },
+    "experience_recherche": {
+      "default": "",
+      "type": "string"
+    },
+    "localisation_recherche": {
+      "default": "",
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/bandFinderApis",
+      "handler": "BandFinderApi.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/bandFinderApis/count",
+      "handler": "BandFinderApi.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/bandFinderApis/:_id",
+      "handler": "BandFinderApi.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/bandFinderApis",
+      "handler": "BandFinderApi.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/bandFinderApis/:_id",
+      "handler": "BandFinderApi.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/bandFinderApis/:_id",
+      "handler": "BandFinderApi.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
